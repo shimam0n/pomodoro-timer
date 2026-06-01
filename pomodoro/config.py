@@ -1,3 +1,5 @@
+VERSION             = "1.0"
+
 WORK_MINUTES        = 25
 SHORT_BREAK         = 5
 LONG_BREAK          = 15

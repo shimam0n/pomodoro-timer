@@ -1,7 +1,7 @@
 import sys
 import ctypes
 
-from config import BAR_WIDTH
+from config import BAR_WIDTH, VERSION
 
 RED    = "\033[91m"
 GREEN  = "\033[92m"
@@ -56,7 +56,7 @@ def print_header(session, mode, total_sessions):
         "short": f"{GREEN}{BOLD} 短い休憩 ☕ {RESET}",
         "long":  f"{CYAN}{BOLD} 長い休憩 🌿 {RESET}",
     }[mode]
-    print(f"\n  ポモドーロタイマー  {DIM}v1.0{RESET}")
+    print(f"\n  ポモドーロタイマー  {DIM}v{VERSION}{RESET}")
     print(f"  セッション #{session}  {label}")
     print(f"  完了: {tomatoes if tomatoes else DIM+'(まだなし)'+RESET}")
     print()

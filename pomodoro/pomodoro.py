@@ -173,7 +173,7 @@ def main():
         if result == "quit":
             break
 
-        notify("break")
+        notify(break_mode)
         session += 1
 
     os.system("cls")
